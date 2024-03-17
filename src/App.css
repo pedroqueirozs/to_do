@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* cores */
+  --borderColor: #454545;
+  --textColor: #e1e1e1;
+  --backgroundBlackBody: #111111;
+  --buttonConfigs: blue;
+  --buttonComplete: green;
+  --buttonEscluir: red;
+  /* tamanho de fontes */
+  font-size: 62, 5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 30px;
+  background-color: var(--backgroundBlackBody);
+}
+.controler-fundo {
+  background-color: var(--textColor);
+}
+.controler-fundo h2 {
+  color: var(--backgroundBlackBody);
+}
+.controler-fundo h1 {
+  color: var(--backgroundBlackBody);
+}
+.controler-fundo p {
+  color: var(--backgroundBlackBody);
+}
+.controler-fundo .todo {
+  background-color: white;
+  color: var(--backgroundBlackBody);
+}
+
+.img-controler-background button {
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 1rem;
+}
+.img-controler-background button svg {
+  fill: var(--textColor);
+}
+.controler-fundo .img-controler-background button svg {
+  fill: var(--backgroundBlackBody);
+}
+.app {
+  max-width: 600px;
+  margin: 3rem auto;
+  border: 1px solid var(--borderColor);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+h1 {
+  text-align: center;
+  color: var(--textColor);
+}
+h2 {
+  margin-bottom: 0.5rem;
+  color: var(--textColor);
+}
+p {
+  margin: 10px 0;
+}
+input {
+  box-sizing: border-box;
+  border: 1px solid;
+}
+button {
+  background-color: var(--buttonConfigs);
+  cursor: pointer;
+  padding: 0.4rem 1rem;
+  border: none;
+  color: var(--textColor);
+  border-radius: 3px;
+  opacity: 0.5s;
+  margin-right: 10px;
+}
+button:hover {
+  opacity: 0.7;
+}
+.todo-list {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--borderColor);
+}
+.todo {
+  background-color: var(--backgroundBlackBody);
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--borderColor);
+  color: var(--textColor);
+}
+.todo-form {
+  padding-bottom: 1.5rem;
+}
+.complete {
+  background-color: var(--buttonComplete);
+}
+.remove {
+  background-color: var(--buttonEscluir);
+}
+input,
+select {
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+.filter,
+.search {
+  border-bottom: 1px solid var(--borderColor);
+  margin-bottom: 20px;
+  color: var(--textColor);
+  padding: 1rem;
+}
+.filter-options {
+  gap: 3rem;
+  display: flex;
+  justify-content: space-between;
+}
+.filter-options div {
+  flex: 1 1 5;
+}
+@media (max-width: 500px) {
+  .todo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .todo .butons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 2px;
+  }
+  .filter .butons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding-top: 0;
+  }
+}
