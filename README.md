@@ -17,14 +17,14 @@
 <br>
 
 <p align="center">
-  <img alt="imagem do projeto" src="./src/assets/layout.png" width="100%">
+  <img alt="imagem do projeto" src="./src/assets/layout.png" width="70%">
 </p>
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- React
+- React 
 - HTML
 - CSS
 - JavaScript
